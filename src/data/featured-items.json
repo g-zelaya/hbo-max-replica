@@ -1,0 +1,89 @@
+[
+  {
+    "title": "XXX",
+    "multimediaSrc": "/img/featured/",
+    "type": "Movie"
+  },
+  {
+    "title": "The Last of Us",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Rick and Morty",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Mickey 17",
+    "multimediaSrc": "/img/featured/",
+    "type": "Movie",
+    "badge": "New"
+  },
+  {
+    "title": "Golden Boy",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series",
+    "badge": "New Episodes"
+  },
+  {
+    "title": "The Gilded Age",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series"
+  },
+  {
+    "title": "Serpico",
+    "multimediaSrc": "/img/featured/",
+    "type": "Movie"
+  },
+  {
+    "title": "Duster",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "The Promise",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series"
+  },
+  {
+    "title": "Notting Hill",
+    "multimediaSrc": "/img/featured/",
+    "type": "Movie"
+  },
+  {
+    "title": "An Education",
+    "multimediaSrc": "/img/featured/",
+    "type": "Movie"
+  },
+  {
+    "title": "The Blindside",
+    "multimediaSrc": "/img/featured/",
+    "type": "Movie"
+  },
+  {
+    "title": "100 Foot Wave",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Malditos",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Daddio",
+    "multimediaSrc": "/img/featured/",
+    "type": "Movie"
+  },
+  {
+    "title": "Found",
+    "multimediaSrc": "/img/featured/",
+    "type": "Series"
+  }
+]

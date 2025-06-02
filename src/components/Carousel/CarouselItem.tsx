@@ -1,33 +1,69 @@
 import Image from "next/image";
+import ImageBadge from "../ImageBadge";
 
 interface CarouselItemProps {
   title: string;
-  imageSrc: string;
-  subtitle?: string;
+  multimediaSrc: string;
+  badge?: string;
+  idxNumber?: number;
+  type?: string;
+  horizontalDisplay?: boolean;
   onClick?: () => void;
 }
 
 export default function CarouselItem({
   title,
-  imageSrc,
-  subtitle,
+  multimediaSrc,
+  badge,
   onClick,
+  idxNumber,
+  type,
+  horizontalDisplay,
 }: CarouselItemProps) {
   return (
-    <div className="w-[180px] flex-shrink-0 cursor-pointer" onClick={onClick}>
-      <div className="w-full h-[270px] relative rounded overflow-hidden shadow-md">
+    <div
+      className="
+        flex-none cursor-pointer
+        min-w-[33vw] max-w-[33vw]
+        sm:min-w-[25vw] sm:max-w-[25vw]
+        md:min-w-[16.6vw] md:max-w-[16.6vw]
+        lg:min-w-[12.5vw] lg:max-w-[12.5vw]
+        h-[210px] sm:h-[260px] md:h-[320px] xl:h-[400px]
+        transition-all duration-300
+        py-2
+      "
+      onClick={onClick}
+    >
+      {typeof idxNumber !== "undefined" && (
+        <span>
+          <img
+            src={`/img/top-numbers/before/top${idxNumber}-before.png`}
+            alt={`${type} Top Number ${idxNumber}`}
+            className="absolute top-2 left-2 z-20 w-6 h-6"
+          />
+        </span>
+      )}
+      <div className="w-full h-full relative overflow-hidden shadow-md">
         <Image
-          src={imageSrc}
+          src={multimediaSrc}
           alt={title}
           fill
           className="object-cover"
-          sizes="180px"
+          sizes="(min-width:1024px)12.5vw, (min-width:768px)16.66vw, (min-width:640px)25vw, 33.33vw"
         />
+        {badge && (
+          <div className="absolute z-10">
+            <ImageBadge label={badge} />
+          </div>
+        )}
+        <div className="absolute top-2 right-2 z-20">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <circle cx="11" cy="5" r="1.5" fill="#fff" />
+            <circle cx="11" cy="11" r="1.5" fill="#fff" />
+            <circle cx="11" cy="17" r="1.5" fill="#fff" />
+          </svg>
+        </div>
       </div>
-      {subtitle && (
-        <span className="text-xs text-gray-400 mt-1 block">{subtitle}</span>
-      )}
-      <h3 className="text-white font-semibold text-sm">{title}</h3>
     </div>
   );
 }
