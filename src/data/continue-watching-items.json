@@ -1,14 +1,14 @@
 [
   {
     "title": "The Dark Knight",
-    "multimediaSrc": "/img/continue-watching/",
+    "multimediaSrc": "/img/continue-watching/the_dark_knight-continue.jpg",
     "type": "Movie",
     "tags": ["16+", "2008"],
     "progress": 33
   },
   {
     "title": "Interstellar",
-    "multimediaSrc": "/img/continue-watching/",
+    "multimediaSrc": "/img/continue-watching/interstellar-continue.webp",
     "type": "Movie",
     "tags": ["13+", "2014"],
     "progress": 70
@@ -16,7 +16,7 @@
   {
     "title": "The Penguin",
     "subtitle": "S1 E2 InsideMan",
-    "multimediaSrc": "/img/continue-watching/",
+    "multimediaSrc": "/img/continue-watching/the-penguin-continue.avif",
     "type": "Series",
     "tags": ["16+"],
     "progress": 12

@@ -1,84 +1,84 @@
 [
   {
     "title": "The Batman",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/the-batman-recommended.jpg",
     "type": "Movie"
   },
   {
     "title": "The Sopranos",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/the-soprano-recommended.jpg",
     "type": "Series"
   },
   {
     "title": "Game of Thrones",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/game-of-thrones-recommended.jpg",
     "type": "Series"
   },
   {
     "title": "Final Destination",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/final-destination-recommended.jpg",
     "type": "Movie"
   },
   {
     "title": "House of The Dragon",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/house-of-the-dragon-recommended.jpg",
     "type": "Series"
   },
   {
     "title": "Constantine",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/constantine-recommended.jpg",
     "type": "Movie"
   },
   {
     "title": "The Wild Robot",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/the-wild-robot-recommended.jpg",
     "type": "Movie"
   },
   {
     "title": "Oppenheimer",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/oppenheimer-recommended.jpg",
     "type": "Movie"
   },
   {
     "title": "Chernobyl",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/chernobyl-recommended.jpg",
     "type": "Series"
   },
   {
     "title": "Euphoria",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/euphoria-recommended.webp",
     "type": "Series"
   },
   {
     "title": "Kraven The Hunter",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/kraven-the-hunter-recommended.jpg",
     "type": "Movie"
   },
   {
     "title": "Regular Show",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/regular-show-recommended.webp",
     "type": "Series"
   },
   {
     "title": "The Big Bang Theory",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/the-big-bang-theory-recommended.webp",
     "type": "Series",
     "badge": "New Episode"
   },
   {
     "title": "Dune Prophecy",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/dune-prophecy-recommended.jpg",
     "type": "Series",
     "badge": "New Episode"
   },
   {
     "title": "Man of Steel",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/man-of-steel-recommended.webp",
     "type": "Movie"
   },
   {
     "title": "Adventure Time",
-    "multimediaSrc": "/img/recommended/",
+    "multimediaSrc": "/img/recommended/adeventure-time-recommended.jpg",
     "type": "Series"
   }
 ]
