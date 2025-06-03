@@ -12,7 +12,6 @@ interface MediaCarouselProps {
   items: MediaItem[];
   showProgressBar?: boolean;
   showMediaTitle?: boolean;
-  horizontalDisplay?: boolean;
   isTop10?: boolean;
 }
 
@@ -21,7 +20,6 @@ export default function MediaCarousel({
   items,
   showProgressBar = false,
   showMediaTitle = false,
-  horizontalDisplay = false,
   isTop10 = false,
 }: MediaCarouselProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -67,13 +65,21 @@ export default function MediaCarousel({
     if (title === "Top 10 Movies Today")
       return (
         <span>
-          <img src="/img/top10-movies.png.webp" alt="Top 10 Movies Today" />
+          <img
+            src="/img/top10-movies.png.webp"
+            alt="Top 10 Movies Today"
+            className="w-[300px] md:w-[400px] my-4"
+          />
         </span>
       );
     else if (title === "Top 10 Series Today")
       return (
         <span>
-          <img src="/img/top10-series.png.webp" alt="Top 10 Movies Today" />
+          <img
+            src="/img/top10-series.png.webp"
+            alt="Top 10 Movies Today"
+            className="w-[300px] md:w-[400px] my-4"
+          />
         </span>
       );
     else return <h2 className="text-xl text-white font-bold mb-4">{title}</h2>;
@@ -82,34 +88,21 @@ export default function MediaCarousel({
   return (
     <section
       className="
-        relative w-full px-4
-        sm: px-6 md:px-8 lg:px-10 xl:px-12
-        mt-8
+        relative w-full mt-8
+        px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12
       "
     >
       {handleCarouselTitle(title)}
       <div
         ref={scrollRef}
-        className="
-          flex items-start
-          gap-2 sm:gap-4 md:gap-6 lg:gap-8
-          h-auto
-          overflow-x-auto 
-          overflow-y-hidden 
-          no-scrollbar
-          scroll-smooth
-        "
+        className="flex flex-row w-full overflow-x-auto gap-6"
       >
         {items.map((item, idx) => (
           <div key={idx} className="flex flex-col">
             {isTop10 ? (
-              <CarouselItem
-                {...item}
-                horizontalDisplay={horizontalDisplay}
-                idxNumber={idx + 1}
-              />
+              <CarouselItem {...item} idxNumber={idx + 1} />
             ) : (
-              <CarouselItem {...item} horizontalDisplay={horizontalDisplay} />
+              <CarouselItem {...item} />
             )}
             {showProgressBar && <ProgressBar progress={item.progress!} />}
             {showMediaTitle && (

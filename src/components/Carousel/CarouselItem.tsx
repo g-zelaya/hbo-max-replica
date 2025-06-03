@@ -18,36 +18,41 @@ export default function CarouselItem({
   onClick,
   idxNumber,
   type,
-  horizontalDisplay,
 }: CarouselItemProps) {
   return (
     <div
       className="
-        flex-none cursor-pointer
-        min-w-[33vw] sm:min-w-[25vw] md:min-w-[16.6vw] lg:min-w-[12.5vw]
-        aspect-[2/3]
+        relative shrink-0 py-2 cursor-pointer 
+        w-[33.33vw] sm:w-[25vw] md:w-[16.66vw] lg:w-[12.5vw]
+        aspect-[2/3] group
         transition-all duration-300
-        py-2
-        group
       "
       onClick={onClick}
     >
       {typeof idxNumber !== "undefined" && (
-        <span>
-          <img
-            src={`/img/top-numbers/before/top${idxNumber}-before.png`}
-            alt={`${type} Top Number ${idxNumber}`}
-            className="absolute top-2 left-2 z-20 w-6 h-6"
-          />
-        </span>
+        <img
+          src={`/img/top-numbers/before/top${idxNumber}-before.png`}
+          alt={`${type} Top Number ${idxNumber}`}
+          className="
+            absolute z-20
+            left-0 bottom-0 h-1/3
+            -translate-y-1/2
+            -translate-x-1/2
+            drop-shadow-lg
+            pointer-events-none select-none 
+            transition-all duration-300
+          "
+          draggable={false}
+          style={{ transform: "translate(-50%, -50%)" }}
+        />
       )}
       <div
         className="
-          w-full h-full relative overflow-hidden shadow-md
+          relative w-full h-full overflow-hidden shadow-md 
+          rounded-lg aspect-[2/3] z-30
           border-4 border-transparent
           group-hover:border-white
           transition-all duration-300
-          rounded-lg
         "
       >
         <Image
@@ -58,11 +63,11 @@ export default function CarouselItem({
           sizes="(min-width:1024px)12.5vw, (min-width:768px)16.66vw, (min-width:640px)25vw, 33.33vw"
         />
         {badge && (
-          <div className="absolute z-10">
+          <div className="absolute z-40">
             <ImageBadge label={badge} />
           </div>
         )}
-        <div className="absolute top-2 right-2 z-20">
+        <div className="absolute top-2 right-2 z-40">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
             <circle cx="11" cy="5" r="1.5" fill="#fff" />
             <circle cx="11" cy="11" r="1.5" fill="#fff" />
