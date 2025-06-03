@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Rick and Morty",
+    "description":
+      "Life makes sense again: the new season is here! Has it really been 8 seasons? Time flies, man.",
+    "multimediaSrc": "/img/hero/ricky-and-morty-hero.jpeg.webp",
+    "type": "Series",
+    "badge": "New Episode",
+    "tags": ["[adult swim]", "16+", "8 Seasons"]
+  },
+  {
+    "title": "Golden Boy",
+    "description":
+      "The life of the irresponsible heir to a wealthy family changes forever when his grandfather forces him to marry a humble young woman.",
+    "multimediaSrc": "/img/hero/golden-boy-hero.jpeg.webp",
+    "type": "Series",
+    "badge": "New Episodes",
+    "tags": ["13+", "2 Seasons"]
+  },
+  {
+    "title": "Fear Below",
+    "description":
+      "A team of divers face a bull shark in the depths of a river and a group of ruthless criminals on the surface.",
+    "multimediaSrc": "/img/hero/fear-below-hero.jpeg.webp",
+    "type": "Movie",
+    "tags": ["16+", "2024", "Max Original"]
+  },
+  {
+    "title": "The Last of Us",
+    "description":
+      "After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.",
+    "multimediaSrc": "/img/hero/the-last-of-us-hero.jpeg.webp",
+    "type": "Series",
+    "badge": "New Episode",
+    "tags": ["16+", "2 Seasons", "Max Original"]
+  }
+]

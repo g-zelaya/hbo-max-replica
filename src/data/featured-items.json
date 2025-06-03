@@ -1,0 +1,89 @@
+[
+  {
+    "title": "XXX",
+    "multimediaSrc": "/img/featured/xxx-featured.jpeg.webp",
+    "type": "Movie"
+  },
+  {
+    "title": "The Last of Us",
+    "multimediaSrc": "/img/featured/the-last-of-us-featured.jpg",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Rick and Morty",
+    "multimediaSrc": "/img/featured/ricky-and-morty-featured.jpeg.webp",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Mickey 17",
+    "multimediaSrc": "/img/featured/mickey-17-featured.jpg",
+    "type": "Movie",
+    "badge": "New"
+  },
+  {
+    "title": "Golden Boy",
+    "multimediaSrc": "/img/featured/golden-boy-featured.jpg",
+    "type": "Series",
+    "badge": "New Episodes"
+  },
+  {
+    "title": "The Gilded Age",
+    "multimediaSrc": "/img/featured/the-gilded-age-featured.jpg",
+    "type": "Series"
+  },
+  {
+    "title": "Serpico",
+    "multimediaSrc": "/img/featured/serpico-featured.jpg",
+    "type": "Movie"
+  },
+  {
+    "title": "Duster",
+    "multimediaSrc": "/img/featured/duster-featured.webp",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "The Promise",
+    "multimediaSrc": "/img/featured/the-promise-featured.jpg",
+    "type": "Series"
+  },
+  {
+    "title": "Notting Hill",
+    "multimediaSrc": "/img/featured/notting-hill-featured.webp",
+    "type": "Movie"
+  },
+  {
+    "title": "An Education",
+    "multimediaSrc": "/img/featured/an-education-featured.jpg",
+    "type": "Movie"
+  },
+  {
+    "title": "The Blindside",
+    "multimediaSrc": "/img/featured/the-blind-featured.jpg",
+    "type": "Movie"
+  },
+  {
+    "title": "100 Foot Wave",
+    "multimediaSrc": "/img/featured/100-foot-wave-featured.jpg",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Malditos",
+    "multimediaSrc": "/img/featured/malditos-featured.jpg",
+    "type": "Series",
+    "badge": "New Episode"
+  },
+  {
+    "title": "Daddio",
+    "multimediaSrc": "/img/featured/daddio-featured.jpg",
+    "type": "Movie"
+  },
+  {
+    "title": "Found",
+    "multimediaSrc": "/img/featured/found-featured.jpg",
+    "type": "Series"
+  }
+]
