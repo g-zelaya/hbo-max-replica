@@ -28,7 +28,9 @@ export default function HomeCarousel({ items }: HomeCarouselProps) {
         <div
           key={idx}
           className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-            idx === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            idx === activeIndex
+              ? "opacity-100 z-10 pointer-events-auto"
+              : "opacity-0 z-0 pointer-events-none"
           }`}
         >
           <Image
@@ -57,36 +59,47 @@ export default function HomeCarousel({ items }: HomeCarouselProps) {
               {item.description}
             </p>
             <button
-            className="
-              mt-4
-              bg-gray-800 hover:bg-gray-700
-              text-white
-              font-semibold
-              py-2 px-4
-              rounded
-              text-sm sm:text-base
-              transition-colors
-            "
-          >
-            {`Go to ${item.type}`}
-          </button>
+              className="
+                mt-4
+                bg-gray-800 hover:bg-gray-700
+                text-white
+                font-semibold
+                py-2 px-4
+                rounded
+                text-sm sm:text-base
+                transition-colors
+              "
+            >
+              {`Go to ${item.type}`}
+            </button>
           </div>
         </div>
       ))}
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:scale-110 transition z-20"
-
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:scale-110 transition z-20"
-
       >
         <ChevronRight className="w-6 h-6" />
       </button>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {items.map((_, dotIdx) => (
+          <span
+            key={dotIdx}
+            className={
+              dotIdx === activeIndex
+                ? "h-3 w-3 rounded-full bg-white"
+                : "h-3 w-3 rounded-full bg-white/50"
+            }
+            onClick={() => setActiveIndex(dotIdx)}
+          ></span>
+        ))}
+      </div>
     </div>
   );
 }

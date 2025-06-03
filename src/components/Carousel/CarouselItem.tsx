@@ -22,10 +22,9 @@ export default function CarouselItem({
   return (
     <div
       className="
-        relative shrink-0 py-2 cursor-pointer 
+        flex flex-row items-end shrink-0 py-2 cursor-pointer 
         w-[33.33vw] sm:w-[25vw] md:w-[16.66vw] lg:w-[12.5vw]
-        aspect-[2/3] group
-        transition-all duration-300
+        group transition-all duration-300
       "
       onClick={onClick}
     >
@@ -34,8 +33,8 @@ export default function CarouselItem({
           src={`/img/top-numbers/before/top${idxNumber}-before.png`}
           alt={`${type} Top Number ${idxNumber}`}
           className="
-            absolute z-20
-            left-0 bottom-0 h-1/3
+            flex-shrink-0 z-20 -mr-4
+            w-8 md:w-10 lg:w-12 xl:w-14 
             -translate-y-1/2
             -translate-x-1/2
             drop-shadow-lg
@@ -43,12 +42,11 @@ export default function CarouselItem({
             transition-all duration-300
           "
           draggable={false}
-          style={{ transform: "translate(-50%, -50%)" }}
         />
       )}
       <div
         className="
-          relative w-full h-full overflow-hidden shadow-md 
+          relative flex-1 overflow-hidden shadow-md 
           rounded-lg aspect-[2/3] z-30
           border-4 border-transparent
           group-hover:border-white

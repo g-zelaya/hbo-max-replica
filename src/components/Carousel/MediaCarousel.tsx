@@ -6,7 +6,6 @@ import CarouselItem from "./CarouselItem";
 import ArrowControls from "./ArrowControls";
 import ProgressBar from "../ProgressBar";
 
-
 interface MediaCarouselProps {
   title: string;
   items: MediaItem[];
@@ -25,7 +24,6 @@ export default function MediaCarousel({
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showPrev, setShowPrev] = useState<boolean>(false);
   const [showNext, setShowNext] = useState<boolean>(false);
-
 
   const updateArrowVisibility = () => {
     if (!scrollRef.current) return;
@@ -95,7 +93,7 @@ export default function MediaCarousel({
       {handleCarouselTitle(title)}
       <div
         ref={scrollRef}
-        className="flex flex-row w-full overflow-x-auto gap-6"
+        className="flex flex-row w-full overflow-x-auto gap-6 no-scrollbar"
       >
         {items.map((item, idx) => (
           <div key={idx} className="flex flex-col">
