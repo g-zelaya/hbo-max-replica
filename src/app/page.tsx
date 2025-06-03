@@ -10,7 +10,7 @@ import topSeriesTodayItems from "@/data/top-series-today-items.json";
 export default function Home() {
   return (
     <>
-      <main className="relative">
+      <main className="w-full overflow-x-hidden" >
         <HomeCarousel items={heroItems} />
         <MediaCarousel title="Featured" items={featuredItems} />
         <MediaCarousel title="Recommended for You" items={recommendedItems} />

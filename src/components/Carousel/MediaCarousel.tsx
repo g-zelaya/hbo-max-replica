@@ -6,6 +6,7 @@ import CarouselItem from "./CarouselItem";
 import ArrowControls from "./ArrowControls";
 import ProgressBar from "../ProgressBar";
 
+
 interface MediaCarouselProps {
   title: string;
   items: MediaItem[];
@@ -26,6 +27,7 @@ export default function MediaCarousel({
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showPrev, setShowPrev] = useState<boolean>(false);
   const [showNext, setShowNext] = useState<boolean>(false);
+
 
   const updateArrowVisibility = () => {
     if (!scrollRef.current) return;

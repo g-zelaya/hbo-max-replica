@@ -24,13 +24,11 @@ export default function CarouselItem({
     <div
       className="
         flex-none cursor-pointer
-        min-w-[33vw] max-w-[33vw]
-        sm:min-w-[25vw] sm:max-w-[25vw]
-        md:min-w-[16.6vw] md:max-w-[16.6vw]
-        lg:min-w-[12.5vw] lg:max-w-[12.5vw]
-        h-[210px] sm:h-[260px] md:h-[320px] xl:h-[400px]
+        min-w-[33vw] sm:min-w-[25vw] md:min-w-[16.6vw] lg:min-w-[12.5vw]
+        aspect-[2/3]
         transition-all duration-300
         py-2
+        group
       "
       onClick={onClick}
     >
@@ -43,7 +41,15 @@ export default function CarouselItem({
           />
         </span>
       )}
-      <div className="w-full h-full relative overflow-hidden shadow-md">
+      <div
+        className="
+          w-full h-full relative overflow-hidden shadow-md
+          border-4 border-transparent
+          group-hover:border-white
+          transition-all duration-300
+          rounded-lg
+        "
+      >
         <Image
           src={multimediaSrc}
           alt={title}
